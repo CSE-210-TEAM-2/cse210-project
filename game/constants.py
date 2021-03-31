@@ -25,6 +25,7 @@ COINS_CAN_DIE = False
 COIN_IMAGE = "images/coin.png"
 SUBMARINE_IMAGE = "images/submarine.png"
 SHARK_IMAGE = "images/shark.png"
+OCTAPUS_IMAGE = "https://www.freepnglogos.com/uploads/octopus-png/octopus-png-photo-png-mart-5.png"
 BRICK_IMAGE = "images/brick-0.png"
 BACKGROUND ="images/background.png"
 TORPEDO_IMAGE = "images/torpedo.png" 

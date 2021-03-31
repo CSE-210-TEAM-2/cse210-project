@@ -32,6 +32,10 @@ def main():
     for i in range(constants.NUM_SHARKS):
         cast["sharks"].append(Shark())
 
+    cast["octopi"] = []
+    for i in range(constants.NUM_OCTOPI):
+        cast["octopi"].append(Shark())
+
     cast["coins"] = []
     for i in range(constants.NUM_COINS):
         cast["coins"].append(Coin())
@@ -53,12 +57,13 @@ def main():
 
     control_actors_action = ControlActorsAction()
     control_shark_action = Shark_action()
+    control_octopi_action = Octopus_action()
     move_actors_action = MoveActorsAction()
     handle_collisions_action = HandleCollisionsAction()
     draw_actors_action = DrawActorsAction()
     
     script[Director.ON_KEY_PRESS] = [control_actors_action]
-    script[Director.ON_UPDATE] = [control_shark_action,move_actors_action, handle_collisions_action]
+    script[Director.ON_UPDATE] = [control_shark_action,control_octopus_action,move_actors_action, handle_collisions_action]
     script[Director.ON_DRAW] = [draw_actors_action]
 
     # start the game
