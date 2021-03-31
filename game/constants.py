@@ -2,21 +2,29 @@ import os
 
 MAX_X = 800
 MAX_Y = 600
-NUM_BALLS = 5
 
-BALL_SPEED = 3
-BALL_Y = MAX_Y / 2
+SUB_1_MAX_X = 400
+SUB_2_MAX_X = 800
+MAX_B = 600
 
-PADDLE_Y = 25
+NUM_COINS = 5
+NUM_SHARKS = 1
 
-PADDLE_MOVE_SCALE = 5
+COIN_SPEED = 3
+SHARK_SPEED = 5
+COIN_Y = MAX_Y / 2
 
-BRICK_WIDTH = 25
-BRICK_HEIGHT = 15
-BRICK_SPACE = 10
+SUBMARINE_Y = 25
 
-BALLS_CAN_DIE = False
+SUBMARINE_MOVE_SCALE = 5
 
-BALL_IMAGE = "images/ball-0.png"
-PADDLE_IMAGE = "images/paddle-0.png"
+SCORE = 0
+
+COINS_CAN_DIE = False
+
+COIN_IMAGE = "images/coin.png"
+SUBMARINE_IMAGE = "images/submarine.png"
+SHARK_IMAGE = "images/shark.png"
 BRICK_IMAGE = "images/brick-0.png"
+BACKGROUND ="images/background.png"
+TORPEDO_IMAGE = "images/torpedo.png" 

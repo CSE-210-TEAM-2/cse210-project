@@ -20,10 +20,36 @@ class ControlActorsAction(Action):
         elif args["key"] == arcade.key.RIGHT:
             x = 1
         
-        
-        x *= constants.PADDLE_MOVE_SCALE
-        y *= constants.PADDLE_MOVE_SCALE
+        if args["key"] == arcade.key.UP:
+            y = 1
+        elif args["key"] == arcade.key.DOWN:
+            y = -1
 
-        submarine = cast["submarine_1"][0] # there's only one in the cast
+        x *= constants.SUBMARINE_MOVE_SCALE
+        y *= constants.SUBMARINE_MOVE_SCALE
+
+        submarine = cast["submarine"][0] 
         submarine.change_x = x
         submarine.change_y = y
+
+
+
+        a = 0
+        b = 0
+
+        if args["key"] == arcade.key.A:
+            a = -1
+        elif args["key"] == arcade.key.D:
+            a = 1
+        
+        if args["key"] == arcade.key.W:
+            b = 1
+        elif args["key"] == arcade.key.S:
+            b = -1
+
+        a *= constants.SUBMARINE_MOVE_SCALE
+        b *= constants.SUBMARINE_MOVE_SCALE
+
+        submarine = cast["submarine_2"][0] 
+        submarine.change_x = a
+        submarine.change_y = b

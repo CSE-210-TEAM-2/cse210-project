@@ -5,11 +5,11 @@ from game import constants
 
 class Coin(arcade.Sprite):
     def __init__(self):
-        super().__init__(constants.BALL_IMAGE)
-        self.center_x = randint(5, constants.MAX_X - 5)
-        self.center_y = 600#constants.BALL_Y
-        self.change_x = 0
-        self.change_y = -1
+        super().__init__(constants.COIN_IMAGE)
+        self.center_x = randint(5, constants.MAX_X / 2)
+        self.center_y = 300
+        self.change_x = constants.COIN_SPEED
+        self.change_y = constants.COIN_SPEED * -1 
 
     def bounce_horizontal(self):
         self.change_y *= -1
@@ -17,6 +17,20 @@ class Coin(arcade.Sprite):
     def bounce_vertical(self):
         self.change_x *= -1
 
-    def go_faster(self):
-        self.change_y -= .1
+class Coin_2(arcade.Sprite):
+    def __init__(self):
+        super().__init__(constants.COIN_IMAGE)
+        self.center_x = randint(400, constants.MAX_X)
+        self.center_y = 599
+        self.change_x = constants.COIN_SPEED
+        self.change_y = constants.COIN_SPEED
+
+    def bounce_horizontal(self):
+        self.change_y *= -1
+
+    def bounce_vertical(self):
+        self.change_x *= -1
+
+
+
 
