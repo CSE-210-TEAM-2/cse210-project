@@ -9,9 +9,11 @@ MAX_B = 600
 
 NUM_COINS = 5
 NUM_SHARKS = 1
+NUM_OCTOPI = 1
 
 COIN_SPEED = 3
 SHARK_SPEED = 5
+OCTAPUS_SPEED = 3
 COIN_Y = MAX_Y / 2
 
 SUBMARINE_Y = 25
@@ -25,7 +27,7 @@ COINS_CAN_DIE = False
 COIN_IMAGE = "images/coin.png"
 SUBMARINE_IMAGE = "images/submarine.png"
 SHARK_IMAGE = "images/shark.png"
-OCTAPUS_IMAGE = "https://www.freepnglogos.com/uploads/octopus-png/octopus-png-photo-png-mart-5.png"
+OCTOPUS_IMAGE = "images/octopus.png"
 BRICK_IMAGE = "images/brick-0.png"
 BACKGROUND ="images/background.png"
 TORPEDO_IMAGE = "images/torpedo.png" 

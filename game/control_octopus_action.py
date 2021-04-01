@@ -23,4 +23,4 @@ class Octopus_action(Action):
                 list_of_octopi[key] = 1
         
         if spot > 990:
-            cast["octopi"].append(Octopi())
+            cast["octopi"].append(Octopus())

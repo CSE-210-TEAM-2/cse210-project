@@ -4,6 +4,7 @@ import arcade
 from game import constants
 from game.control_actors_action import ControlActorsAction
 from game.control_shark_action import Shark_action
+from game.control_octopus_action import Octopus_action
 from game.draw_actors_action import DrawActorsAction
 from game.handle_collisions_action import HandleCollisionsAction
 from game.move_actors_action import MoveActorsAction
@@ -57,7 +58,7 @@ def main():
 
     control_actors_action = ControlActorsAction()
     control_shark_action = Shark_action()
-    control_octopi_action = Octopus_action()
+    control_octopus_action = Octopus_action()
     move_actors_action = MoveActorsAction()
     handle_collisions_action = HandleCollisionsAction()
     draw_actors_action = DrawActorsAction()

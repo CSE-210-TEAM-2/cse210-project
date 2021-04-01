@@ -43,9 +43,12 @@ class HandleCollisionsAction(Action):
 
     def _kill(self,cast):
 
-        # This will kill the sharks as soon as they get ouyt of the screen
+        # This will kill the sharks and octopi as soon as they get out of the screen
         sharks_to_remove = []
         sharks = cast["sharks"]
+
+        octopi_to_remove = []
+        octopi = cast["octopi"]
 
         for shark in sharks:
             if shark.bottom <= 0:
@@ -53,6 +56,13 @@ class HandleCollisionsAction(Action):
 
         for shark in sharks_to_remove:
             cast["sharks"].remove(shark)
+
+        for octopus in octopi:
+            if octopus.bottom <= 0:
+                octopi_to_remove.append(octopus)
+
+        for octopus in octopi_to_remove:
+            cast["octopi"].remove(octopus)
 
         # This will kill the coins from the left side as soon as they get ouyt of the screen
         coins_to_remove = []

@@ -26,8 +26,8 @@ class DrawActorsAction(Action):
         for shark in cast["sharks"]:
             shark.draw()
 
-        for octapus in cast["octapi"]:
-            octapus.draw()
+        for octopus in cast["octopi"]:
+            octopus.draw()
 
         cast["score_1"][0].draw()
 
