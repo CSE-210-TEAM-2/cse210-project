@@ -9,6 +9,7 @@ from game.draw_actors_action import DrawActorsAction
 from game.handle_collisions_action import HandleCollisionsAction
 from game.move_actors_action import MoveActorsAction
 
+
 from game.coin import Coin
 from game.coin import Coin_2
 from game.shark import Shark
@@ -16,6 +17,7 @@ from game.director import Director
 from game.submarine import Submarine
 from game.score import Score
 from game.score import Score_2
+
 
 
 def main():
