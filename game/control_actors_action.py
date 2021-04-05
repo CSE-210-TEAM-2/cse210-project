@@ -28,7 +28,7 @@ class ControlActorsAction(Action):
         x *= constants.SUBMARINE_MOVE_SCALE
         y *= constants.SUBMARINE_MOVE_SCALE
 
-        submarine = cast["submarine"][0] 
+        submarine = cast["submarine_2"][0] 
         submarine.change_x = x
         submarine.change_y = y
 
@@ -50,6 +50,6 @@ class ControlActorsAction(Action):
         a *= constants.SUBMARINE_MOVE_SCALE
         b *= constants.SUBMARINE_MOVE_SCALE
 
-        submarine = cast["submarine_2"][0] 
+        submarine = cast["submarine"][0] 
         submarine.change_x = a
         submarine.change_y = b
