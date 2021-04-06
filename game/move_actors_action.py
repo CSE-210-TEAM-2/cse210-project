@@ -1,5 +1,5 @@
 from game.action import Action
-
+import arcade
 
 class MoveActorsAction(Action):
     """A code template for moving actors. The responsibility of this class of
@@ -12,6 +12,6 @@ class MoveActorsAction(Action):
     def execute(self, cast, args, director):
         for group in cast.values():
             for actor in group:
-                if actor.change_x != 0 or actor.change_y != 0:
+                if isinstance(actor, arcade.Sprite) and (actor.change_x != 0 or actor.change_y != 0):
                     actor.center_x = actor.center_x + actor.change_x
                     actor.center_y = actor.center_y + actor.change_y
