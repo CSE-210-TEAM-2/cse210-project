@@ -8,6 +8,7 @@ from game.control_octopus_action import Octopus_action
 from game.draw_actors_action import DrawActorsAction
 from game.handle_collisions_action import HandleCollisionsAction
 from game.move_actors_action import MoveActorsAction
+from game.play_music_action import PlayMusicAction
 
 
 from game.coin import Coin
@@ -22,6 +23,8 @@ from game.score import Score_2
 
 def main():
 
+    arcade.play_sound(arcade.load_sound(":resources:music/1918.mp3"))
+    
     # create the cast {key: tag, value: list}
     cast = {}
 
@@ -53,6 +56,9 @@ def main():
     cast["score_2"] = []
     cast["score_2"].append(Score_2())
 
+#    cast["sounds"] = []
+#    cast["sounds"].append(arcade.Sound(':resources:music/1918.mp3'))
+
 
     
     # create the script {key: tag, value: list}
@@ -64,10 +70,11 @@ def main():
     move_actors_action = MoveActorsAction()
     handle_collisions_action = HandleCollisionsAction()
     draw_actors_action = DrawActorsAction()
-    
+    #play_music_action = PlayMusicAction()
+
     script[Director.ON_KEY_PRESS] = [control_actors_action]
     script[Director.ON_UPDATE] = [control_shark_action,control_octopus_action,move_actors_action, handle_collisions_action]
-    script[Director.ON_DRAW] = [draw_actors_action]
+    script[Director.ON_DRAW] = [draw_actors_action]#, play_music_action]
 
     # start the game
     director = Director(constants.MAX_X, constants.MAX_Y)
@@ -90,3 +97,16 @@ if __name__ == "__main__":
     #how to create a torped and give the location of the submarine 
     #how to add a background image 
     #how to handle more than one key can be press at the time 
+
+
+#self.sound = arcade.Sound(sound_file)
+
+#self.sound.play(pan=self.pan, volume=self.volume)
+
+
+
+
+
+
+
+
