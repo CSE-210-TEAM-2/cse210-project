@@ -11,3 +11,9 @@ Submarine, shark, octopus, and coin images. Sound effects and dual screens.
 
 Timeline:
 Finish by overall due date.
+
+Authors:
+Madelyn McGreer
+Clark Atkins
+Chika Wood
+Eddy Gonzalez
