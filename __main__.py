@@ -1,5 +1,6 @@
 import arcade
 
+from menu.factory import Factory
 from game import constants
 from game.control_actors_action import ControlActorsAction
 from game.control_shark_action import Shark_action
