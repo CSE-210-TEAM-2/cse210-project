@@ -1,6 +1,5 @@
 import arcade
 
-
 from game import constants
 from game.control_actors_action import ControlActorsAction
 from game.control_shark_action import Shark_action
@@ -10,6 +9,7 @@ from game.handle_collisions_action import HandleCollisionsAction
 from game.move_actors_action import MoveActorsAction
 from game.play_music_action import PlayMusicAction
 
+
 from game.coin import Coin
 from game.coin import Coin_2
 from game.shark import Shark
@@ -17,6 +17,7 @@ from game.director import Director
 from game.submarine import Submarine
 from game.score import Score
 from game.score import Score_2
+
 
 
 def main():
